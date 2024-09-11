@@ -55,3 +55,8 @@ fi
 if [ -d "$HOME/.spicetify" ]; then
   export PATH=$PATH:$HOME/.spicetify
 fi
+
+# delta
+if check delta; then
+  export DELTA_PAGER="less --RAW-CONTROL-CHARS --quit-if-one-screen"
+fi
