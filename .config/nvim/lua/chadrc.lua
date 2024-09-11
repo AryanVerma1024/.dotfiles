@@ -4,21 +4,35 @@
 ---@type ChadrcConfig
 local M = {}
 
-M.ui = {
-	theme = "catppuccin",
-  transparency = true,
-  statusline = {
-    separator_style = "block"
+M = {
+  ui = {
+    theme = "catppuccin",
+    transparency = true,
+    statusline = {
+      separator_style = "block"
+    },
+
+    hl_override = {
+    	Comment = { italic = true },
+    	["@comment"] = { italic = true },
+    },
+
+    nvdash = {
+      load_on_startup = true,
+    }
   },
-
-  hl_override = {
-		Comment = { italic = true },
-		["@comment"] = { italic = true },
-	},
-
-  nvdash = {
-    load_on_startup = true,
-  }
+  mason = {
+    cmd = true,
+    pkgs = {
+      "lua-language-server",
+      "stylua",
+      "html-lsp",
+      "css-lsp",
+      "prettier",
+  	  "typescript-language-server",
+      "biome",
+    }
+  },
 }
 
 return M
