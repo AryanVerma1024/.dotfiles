@@ -8,24 +8,30 @@ The repository is organized as follows:
 
 ```plaintext
 dotfiles/
-├── .bash_logout
-├── .bash_profile
-├── .bashrc
 ├── .config/
-│   ├── alacritty/
-│   ├── bat/
-│   ├── btop/
-│   ├── nvim/
-│   ├── omp/
-│   └── tmux/
+│  ├── alacritty/
+│  ├── bat/
+│  ├── btop/
+│  ├── delta/
+│  ├── nvim/
+│  ├── omp/
+│  ├── superfile/
+│  ├── tmux/
+│  ├── wezterm/
+│  └── yazi/
 ├── .sh/
 │   ├── aliases
 │   ├── exports
 │   └── functions
+├── .ssh/
+│   └── config
+├── .bash_logout
+├── .bash_profile
+├── .bashrc
+├── .gitconfig
 ├── .stow-local-ignore
 ├── .zshrc
 └── README.md
-
 ```
 
 - generated using the `tre-command` package.
