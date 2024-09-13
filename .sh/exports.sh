@@ -60,3 +60,9 @@ fi
 if check delta; then
   export DELTA_PAGER="less --RAW-CONTROL-CHARS --quit-if-one-screen"
 fi
+
+# Cargo
+if [ -d "$HOME/.cargo/bin" ]; then
+  export PATH=$PATH:$HOME/.cargo/bin
+fi
+
