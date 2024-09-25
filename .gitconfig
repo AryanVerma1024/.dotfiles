@@ -6,8 +6,8 @@
 	helper = !/usr/bin/gh auth git-credential
 
 [user]
-  email = email@example.com # old commit cleaning
-  name  = luminarleaf
+  email = 80571430+LuminarLeaf@users.noreply.github.com
+  name  = Luminar Leaf
 
 [init]
   defaultBranch = main
