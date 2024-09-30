@@ -41,5 +41,5 @@ dotfiles/
 I just use the simple `stow .` command to deploy the dotfiles. This will create symlinks in the home directory to the files in this repository.
 
 ```sh
-stow . --no-folding --adopt -t ~ && git reset HEAD --hard
+stow . --no-folding --adopt -t ~
 ```
