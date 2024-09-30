@@ -9,6 +9,15 @@
 # xdg
 export XDG_CONFIG_HOME="$HOME/.config"
 
+# EDITOR
+if check nvim; then
+  export EDITOR="nvim"
+  export VISUAL="nvim"
+else
+  export EDITOR="vi"
+  export VISUAL="vi"
+fi
+
 # bat / batcat ( debian/ubuntu )
 if check batcat; then
   export BAT_BIN="batcat"
