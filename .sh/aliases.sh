@@ -37,14 +37,14 @@ fi
 
 # eza || ls
 if check eza; then
-  alias ls='eza --icons'
-  alias la='eza -a --icons'
-  alias ll='eza -lg --icons'
-  alias lla='eza -lga --icons'
-  alias l='eza -F --icons'
+  alias ls='eza --icons auto'
+  alias la='eza -a --icons auto'
+  alias ll='eza -lg --icons auto'
+  alias lla='eza -lga --icons auto'
+  alias l='eza -F --icons auto'
 
   # tree
-  alias tree='eza -T --git-ignore --icons -I ".git|node_modules|.cache"'
+  alias tree='eza -T --git-ignore --icons auto -I ".git|node_modules|.cache"'
 else
   alias ls='ls --color=auto'
   alias la='ls --color=auto -A'
